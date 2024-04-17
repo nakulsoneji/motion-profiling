@@ -63,7 +63,7 @@ def animate(i):
     velo_data.append(round(velo, 3))
     pos += 1/2 * (velo + prev_velo) * time_interval / 1000
 
-    print("pos: ", position_data[-1], "velo: ", velo_data[-1], "time: ", time_data[-1]);
+    print(f"pos: {pos:.3f} velo: {velo:.3f} time: {time_elapsed:.3f}");
     time_data.append(round(time_elapsed, 3));
     position_data.append(round(pos, 3))  
 
